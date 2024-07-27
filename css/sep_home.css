@@ -340,7 +340,7 @@ footer {
     gap: 20px; /* Space between cards */
     width: 100%;
     max-width: 1200px; /* Optional: limit the max width of the grid */
-    margin-bottom: 80px;
+    margin-bottom: 10px;
 }
 
 .card {
@@ -430,7 +430,7 @@ footer {
 
 #solution-display {
     position: relative;
-    height: 100vh;
+    height: auto;
     min-height: 500px;
     max-height: 1080px;
     background-color: white;
@@ -454,23 +454,19 @@ footer {
 }
 
 /* Responsive design adjustments for devices with width less than 900px */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .solution-image {
-        max-width: 90%; /* Adjust the max width for smaller devices */
+        width: 60%; /* Adjust the max width for smaller devices */
+        height: auto;
     }
-}
 
-
-/* Responsive design adjustments for devices with width less than 900px */
-@media (max-width: 1000px) {
-    .solution-image {
-        max-width: 60%; /* Adjust the max width for smaller devices */
-        margin-bottom: 100px; /* Adjust the margin for smaller devices */
-    }
-    #solution-image-container{
+    #solution-display{
         height: auto;
     }
 }
+
+
+
 
 
 
