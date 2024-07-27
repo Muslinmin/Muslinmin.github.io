@@ -365,7 +365,18 @@ footer {
 }
 
 
-
+#teleport_options{
+    position: relative;
+    height: 40vh;
+    min-height: 500px;
+    max-height: 1080px;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;     /* Center the items vertically */
+    text-align: center;      /* Center text content */
+}
 
 #prototype-showcase-container {
     position: relative;
