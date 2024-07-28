@@ -926,3 +926,60 @@ footer {
         padding: 5px 10px;
     }
 }
+
+
+.custom-footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.custom-footer .custom-copyright {
+    margin-bottom: 15px;
+}
+
+.custom-footer .custom-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-footer .custom-social ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.custom-footer .custom-social a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-footer .custom-social a:hover {
+    color: #007bff;
+}
+
+.custom-footer .custom-social i {
+    font-size: 24px;
+}
+
+.custom-footer .custom-social span {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.custom-footer .custom-top {
+    margin-top: 15px;
+}
+
+.custom-footer .custom-top span {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}
+
+.custom-footer .custom-top span:hover {
+    color: #007bff;
+}
