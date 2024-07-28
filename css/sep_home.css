@@ -365,19 +365,6 @@ footer {
 }
 
 
-#teleport_options{
-    position: relative;
-    height: 40vh;
-    min-height: 500px;
-    max-height: 1080px;
-    background-color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: center; /* Center the items horizontally */
-    align-items: center;     /* Center the items vertically */
-    text-align: center;      /* Center text content */
-}
-
 #prototype-showcase-container {
     position: relative;
     height: 100vh;
@@ -475,14 +462,6 @@ footer {
         height: auto;
     }
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -732,6 +711,112 @@ footer {
         transform: scale(1, 1);
     }
 }
+
+
+#teleport-options {
+    position: relative;
+    height: 40vh;
+    min-height: 500px;
+    max-height: 1080px;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;     /* Center the items vertically */
+    text-align: center;      /* Center text content */
+}
+
+.button-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.button-container a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+.left-button {
+    background-color: #4CAF50; /* Green */
+}
+
+.right-button {
+    background-color: #008CBA; /* Blue */
+}
+
+.button-container a:hover {
+    background-color: #555; /* Darker background on hover */
+}
+
+.button-container a i {
+    margin-left: 10px;
+}
+
+.arrow-left {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.arrow-right {
+    margin-left: 10px;
+}
+
+#skills-card-container {
+    position: relative;
+    height: 40vh;
+    min-height: 500px;
+    max-height: 1080px;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;     /* Center the items vertically */
+    text-align: center;      /* Center text content */
+}
+
+#skills-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+    text-align: center; /* Center text and bullet points */
+    width: 80%; /* Adjust the width of the card */
+    max-width: 800px; /* Optional: limit the max width of the card */
+}
+
+#skills-content h1 {
+    margin-bottom: 15px;
+    font-size: 1.5em; /* Slightly bigger text for the heading */
+}
+
+#skills-content ul {
+    list-style-type: disc;
+    padding-left: 0; /* Remove default padding */
+    text-align: center; /* Center the bullet points */
+}
+
+#skills-content ul li {
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 1.2em; /* Slightly bigger text for the list items */
+    list-style-position: inside; /* Ensure bullets are inside the padding area */
+}
+
+
+
 
 #about {
     padding: 75px 15px;
