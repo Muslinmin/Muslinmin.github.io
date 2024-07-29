@@ -662,46 +662,6 @@ footer {
     cursor: default;
     font-size: 1.2em;
 }
-#myEducation {
-    position: relative;
-    height: auto; /* Allow the container to adjust its height based on content */
-    min-height: 500px;
-    max-height: 1080px;
-    background-color: white;
-    padding: 15px;
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center the items horizontally */
-    align-items: center;     /* Center the items vertically */
-    text-align: center;      /* Center text content */
-    gap: 20px;               /* Add space between the cards */
-}
-
-.education-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 100%;
-    max-width: 600px; /* Maximum width for the cards */
-    text-align: center;
-}
-
-.education-card h1 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.education-card h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.education-card p {
-    font-size: 1em;
-    color: #666;
-}
 
 #contact {
     padding: 50px 15px;
@@ -1022,6 +982,45 @@ footer {
 
 .custom-footer .custom-top span:hover {
     color: #007bff;
+}
+
+#myEducation {
+    position: relative;
+    min-height: 500px;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;     /* Center the items vertically */
+    text-align: center;      /* Center text content */
+    gap: 20px;               /* Add space between the cards */
+}
+
+.education-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;              /* Adjust width to fit content */
+    max-width: 600px;        /* Maximum width for the cards */
+    text-align: center;
+}
+
+.education-card h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.education-card h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.education-card p {
+    font-size: 1em;
+    color: #666;
 }
 
 
