@@ -372,18 +372,19 @@ footer {
 
 #prototype-showcase-container {
     position: relative;
-    height: 100vh;
+    height: auto; /* Allow the container to adjust its height based on content */
     min-height: 500px;
     max-height: 1080px;
     background-color: white;
     padding: 15px;
     display: flex;
+    flex-direction: column; /* Stack content vertically */
     justify-content: center; /* Center the items horizontally */
     align-items: center;     /* Center the items vertically */
     text-align: center;      /* Center text content */
+    margin-top: 50px;        /* Add top margin to create space between sections */
+    box-sizing: border-box;  /* Include padding and margin in height calculations */
 }
-
-
 
 #prototype-content {
     display: flex;
@@ -405,6 +406,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
     margin-bottom: 100px;
 }
+
 #prototype-result-heading{
     position: relative;
     height: auto;
@@ -1457,3 +1459,56 @@ footer {
 .custom-footer .custom-top span:hover {
     color: #007bff;
 }
+
+#validation {
+    position: relative;
+    min-height: 500px;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;     /* Center the items vertically */
+    text-align: center;      /* Center text content */
+    box-sizing: border-box;  /* Include padding in height calculations */
+}
+
+.validation-images {
+    display: flex;
+    flex-direction: row; /* Display images side by side */
+    justify-content: center; /* Center the images horizontally */
+    align-items: center;     /* Center the images vertically */
+    gap: 15px;               /* Add gap between the images */
+    width: 100%;
+    max-width: 1000px;       /* Constrain the width of the content */
+}
+
+.validation-images img {
+    width: 50%;              /* Ensure images take up half the container each */
+    height: 300px;           /* Set a fixed height for the images */
+    object-fit: cover;       /* Ensure images cover the specified height */
+    border-radius: 10px;     /* Add rounded corners */
+    border: 3px solid #ddd;  /* Add a light gray border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    #validation {
+        padding-top: 50px;   /* Add padding at the top for mobile view */
+        min-height: auto;    /* Allow the section to expand based on content */
+    }
+
+    .validation-images {
+        flex-direction: column; /* Stack images vertically */
+    }
+
+    .validation-images img {
+        width: 100%;            /* Ensure images take full width on mobile */
+        height: auto;           /* Maintain aspect ratio on mobile */
+        margin-bottom: 15px;    /* Add space between images */
+    }
+}
+
+
+
