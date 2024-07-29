@@ -1,4 +1,8 @@
 const images = [
+    './images/planning1.jpg',
+    './images/planning2.png',
+    './images/planning3.png',
+    './images/planning4.JPG',
     './images/y axis printer.jpeg',
     './images/y axis printer.jpeg',
     './images/push_button.jpeg' // Add more image paths as needed
@@ -15,6 +19,9 @@ document.querySelector('.next').addEventListener('click', () => {
     currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
     document.getElementById('gallery-image').src = images[currentIndex];
 });
+
+
+
 
 const embeddedImages = [
     './images/x and z axis circuit diagram.jpeg',
@@ -34,13 +41,13 @@ document.querySelector('.embedded-next').addEventListener('click', () => {
     document.getElementById('embedded-gallery-image').src = embeddedImages[embeddedCurrentIndex];
 });
 
-// Modal functionality
+// Modal functionality for embedded images
 const modal = document.getElementById("image-modal");
 const modalImg = document.getElementById("modal-image");
-const galleryImg = document.getElementById("embedded-gallery-image");
+const embeddedGalleryImg = document.getElementById("embedded-gallery-image");
 const closeModal = document.getElementsByClassName("close")[0];
 
-galleryImg.onclick = function() {
+embeddedGalleryImg.onclick = function() {
     modal.style.display = "block";
     modalImg.src = this.src;
 }
@@ -55,8 +62,8 @@ window.onclick = function(event) {
     }
 }
 
-
 const algorithmImages = [
+    './images/algo_flow_chart_2.png',
     './images/createRows.jpg',
     './images/createRows2.jpg',
     './images/pushRow.jpg' // Add more image paths as needed
@@ -74,7 +81,7 @@ document.querySelector('.algorithm-next').addEventListener('click', () => {
     document.getElementById('algorithm-gallery-image').src = algorithmImages[algorithmCurrentIndex];
 });
 
-// Modal functionality
+// Modal functionality for algorithm images
 const algorithmModal = document.getElementById("algorithm-image-modal");
 const algorithmModalImg = document.getElementById("algorithm-modal-image");
 const algorithmGalleryImg = document.getElementById("algorithm-gallery-image");
@@ -94,4 +101,5 @@ window.onclick = function(event) {
         algorithmModal.style.display = "none";
     }
 }
+
 

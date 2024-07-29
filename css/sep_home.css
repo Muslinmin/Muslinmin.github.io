@@ -262,12 +262,11 @@ footer {
 
 #intro {
     position: relative;
-    height: 100vh;
     min-height: 500px;
     max-height: 1080px;
     background-color: white;
-    padding: 15px;
     display: flex;
+    flex-direction: row; /* Side-by-side layout */
     justify-content: center; /* Center the items horizontally */
     align-items: center;     /* Center the items vertically */
     padding: 20px; /* Add padding to the sides of the webpage */
@@ -283,19 +282,14 @@ footer {
 #intro-gallery {
     flex: 1;
     display: flex;
+    justify-content: center;
     align-items: center;
     max-width: 45%; /* Adjust the width as needed */
-    margin-left: 20px; /* Add space between the gallery and the content */
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust the minmax value to control image size */
-    gap: 10px; /* Space between images */
-}
-
-.grid-item img {
-    width: 100%;
+#intro-gallery img {
+    max-width: 60%;
+    width: 60%;
     height: auto;
     border-radius: 10px; /* Optional: Add some rounding to the corners of the images */
 }
@@ -312,12 +306,23 @@ footer {
 /* Responsive design adjustments */
 @media (max-width: 768px) {
     #intro {
-        height: 160vh;
+        flex-direction: column; /* Stack items vertically */
         padding: 10px; /* Reduce padding for smaller screens */
     }
 
+    #intro-content {
+        margin-right: 0; /* Remove the right margin */
+        max-width: 100%; /* Full width */
+        margin-bottom: 20px; /* Add space between content and image */
+    }
 
+    #intro-gallery {
+        max-width: 100%; /* Full width */
+        margin-left: 0; /* Remove the left margin */
+    }
 }
+
+
 #functionality-prototype-container {
     position: relative;
     min-height: 30vh;
@@ -712,7 +717,6 @@ footer {
     }
 }
 
-
 #teleport-options {
     position: relative;
     height: 40vh;
@@ -768,12 +772,49 @@ footer {
 
 .arrow-left {
     margin-left: 0;
-    margin-right: 40px;
+    margin-right: 10px; /* Reduce the margin */
 }
 
 .arrow-right {
     margin-left: 10px;
 }
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    #teleport-options {
+        height: 50vh; /* Reduce the height for smaller screens */
+        min-height: auto; /* Adjust min-height */
+        max-height: auto; /* Adjust max-height */
+    }
+
+    .button-container a {
+        font-size: 0.8em; /* Further reduce font size */
+        padding: 3px; /* Reduce padding */
+    }
+
+    .button-container a i {
+        margin: 0 5px; /* Adjust margin for smaller screens */
+    }
+
+    .arrow-left {
+        margin-right: 5px; /* Further reduce the margin */
+    }
+
+    .arrow-right {
+        margin-left: 5px; /* Further reduce the margin */
+    }
+
+    .left-button {
+        flex: 1.2; /* Make the left button slightly wider */
+    }
+
+    .right-button {
+        flex: 0.8; /* Make the right button slightly narrower */
+    }
+}
+
+
+
 
 #skills-card-container {
     position: relative;

@@ -1045,6 +1045,7 @@ footer {
     }
 }
 
+
 #embedded-container {
     position: relative;
     height: auto;
@@ -1391,3 +1392,70 @@ footer {
     color: #007bff;
 }
 
+#planning-effort-container {
+    position: relative;
+    height: auto;
+    min-height: 500px;
+    max-height: 1080px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;     /* Center the items vertically */
+    text-align: center;      /* Center-align text content */
+    padding: 15px;           /* Add padding to the container */
+}
+
+.planning-image-gallery {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Add some space between the heading and the gallery */
+}
+
+.planning-image-container {
+    position: relative;
+    width: 80%; /* Adjust the width as needed */
+    overflow: hidden;
+}
+
+.planning-image-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Add some rounding to the corners of the images */
+}
+
+.planning-image-gallery button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1; /* Ensure buttons are above the image */
+}
+
+.planning-image-gallery .prev {
+    left: 0;
+}
+
+.planning-image-gallery .next {
+    right: 0;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .planning-image-container {
+        width: 100%; /* Ensure container takes full width */
+    }
+
+    .planning-image-gallery button {
+        font-size: 18px; /* Reduce button size for smaller screens */
+        padding: 5px; /* Reduce padding for smaller screens */
+    }
+}
