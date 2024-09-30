@@ -632,6 +632,19 @@ footer {
     background-color: #0056b3;
 }
 
+.project-skills {
+    margin-top: 10px;
+}
+
+.project-skills span {
+    display: inline-block;
+    background-color: #e4e4ea;
+    color: #374054;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 0.85em;
+}
 
 
 
